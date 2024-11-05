@@ -1,22 +1,42 @@
 class EBook:
+    """Represents an e-book in the bookstore's catalog."""
+
     def __init__(self, title, author, publication_date, genre, price):
-        self.__title = title
-        self.__author = author
+        self.__book_info = {"title": title, "author": author}
         self.__publication_date = publication_date
         self.__genre = genre
         self.__price = price
 
+    # Getters and Setters
     def getTitle(self):
-        #Returns the title of the eBook
-        return self.__title
+        return self.__book_info["title"]
+
+    def setTitle(self, title):
+        self.__book_info["title"] = title
 
     def getAuthor(self):
-        #Returns the author of the eBook
-        return self.__author
+        return self.__book_info["author"]
+
+    def setAuthor(self, author):
+        self.__book_info["author"] = author
+
+    def getPublicationDate(self):
+        return self.__publication_date
+
+    def setPublicationDate(self, publication_date):
+        self.__publication_date = publication_date
+
+    def getGenre(self):
+        return self.__genre
+
+    def setGenre(self, genre):
+        self.__genre = genre
 
     def getPrice(self):
-        #Returns the price of the eBook
         return self.__price
 
+    def setPrice(self, price):
+        self.__price = price
+
     def __str__(self):
-        return f"{self.__title} by {self.__author} - ${self.__price:.2f}"
+        return f"{self.getTitle()} by {self.getAuthor()} - ${self.getPrice():.2f}"
