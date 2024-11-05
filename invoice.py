@@ -8,6 +8,7 @@ class Invoice:
         self.final_total = self.subtotal + self.taxes
 
     def generateInvoice(self):
+        #Generates a string summary of the invoice details
         return (f"Invoice:\nSubtotal: ${self.subtotal:.2f}\nDiscounts: ${self.discounts:.2f}\n"
                 f"VAT: ${self.taxes:.2f}\nFinal Total: ${self.final_total:.2f}")
 
