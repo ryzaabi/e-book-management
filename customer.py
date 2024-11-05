@@ -8,8 +8,8 @@ class Customer:
         Parameters:
         - name (str): The customer's name.
         - contact_information (str): The customer's contact details.
-        - loyalty_member (bool): Indicates if the customer is a loyalty member (default is False).
-        - membership_date (date): The date the customer joined the loyalty program (default is None).
+        - loyalty_member (bool): Indicates if the customer is a loyalty member 
+        - membership_date (date): The date the customer joined the loyalty program 
         """
         self.__name = name
         self.__contact_information = contact_information
