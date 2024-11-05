@@ -5,9 +5,11 @@ class Customer:
         self.__loyalty_member = loyalty_member
 
     def getName(self):
+        #Returns the name of the customer
         return self.__name
 
     def isLoyaltyMember(self):
+        #Returns whether the customer is a loyalty member.
         return self.__loyalty_member
 
     def __str__(self):
