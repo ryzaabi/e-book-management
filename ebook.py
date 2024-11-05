@@ -7,12 +7,15 @@ class EBook:
         self.__price = price
 
     def getTitle(self):
+        #Returns the title of the eBook
         return self.__title
 
     def getAuthor(self):
+        #Returns the author of the eBook
         return self.__author
 
     def getPrice(self):
+        #Returns the price of the eBook
         return self.__price
 
     def __str__(self):
